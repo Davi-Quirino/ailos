@@ -1,8 +1,22 @@
 
 
-.container{
+:host{
     display: flex;
+    justify-content: space-between;
+    margin: 1%;
+    .container{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .content{
+        display: flex;
+    }
+    
+    .title{
+        display: flex;
+        flex-direction: column;
+        
+    }
 }
-.mat-list-container{
 
-}
