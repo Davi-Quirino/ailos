@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ConsultComponent } from './consult/consult.component';
@@ -17,7 +18,13 @@ import { UserInfosComponent } from './user-infos/user-infos.component';
     NavListComponent,
     UserInfosComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, SharedModule, ReactiveFormsModule],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    SharedModule,
+    ReactiveFormsModule,
+  ],
   providers: [],
   exports: [ReactiveFormsModule],
   bootstrap: [AppComponent],

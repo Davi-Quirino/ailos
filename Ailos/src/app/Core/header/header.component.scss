@@ -12,11 +12,25 @@
     .content{
         display: flex;
     }
+    .button{
+        color: #045e7b;
+        border: 1px solid #045e7b;
+        border-radius: 30px;
+        box-sizing: border-box;
+        
+    }
     
     .title{
         display: flex;
         flex-direction: column;
-        
+    }
+
+    .main_title{
+        font-size: x-large;
+    }
+    .subtitle{
+        background-color: "#d3d3d3";
+        color: gray;
     }
 }
 

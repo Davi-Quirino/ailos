@@ -1,9 +1,11 @@
-<form class="content" 
+<form 
+    class="content"
     appFormFocus
-    (keydown.enter)="$event.preventDefault()">
+    (keydown.enter)="$event.preventDefault()"
+    [formGroup]="filtersForm">
         <div class="input-field">
-            <div class="cpf">CPF</div>
-                <mat-form-field class="example-full-width" appearance="fill" >
+            <div class="cpf"><strong>CPF</strong></div>
+                <mat-form-field appearance="outline" >
                 <input 
                     matInput 
                     type="text"
@@ -12,5 +14,5 @@
                     isRequired/>
                 </mat-form-field>
         </div>
-    <button mat-flat-button (click)="onSearch()">Consultar por CPF</button>
+        <button  class="button" mat-stroked-button color="primary" (click)="onSearch($event)">Consultar por CPF</button>
 </form>

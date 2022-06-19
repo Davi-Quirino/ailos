@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 import { CheckIdentityComponent } from './components/check-identity/check-identity.component';
 import { InformationConsultComponent } from './components/information-consult/information-consult.component';
 import { TimelineComponent } from './components/timeline/timeline.component';
@@ -11,7 +12,7 @@ import { MaterialModule } from './modules/material.module';
     CheckIdentityComponent,
     InformationConsultComponent,
   ],
-  imports: [CommonModule, MaterialModule],
+  imports: [CommonModule, MaterialModule, ReactiveFormsModule],
   exports: [
     MaterialModule,
     TimelineComponent,
