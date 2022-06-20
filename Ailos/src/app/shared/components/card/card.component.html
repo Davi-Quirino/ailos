@@ -10,14 +10,14 @@
                 <div class="icon"><mat-icon mat-list-icon >person</mat-icon></div>
                 <div>
                     <div>Nome</div>
-                    <div><strong>Mariana de Souza Oliveira</strong></div>
+                    <div><strong>{{profile.name}}</strong></div>
                 </div>
             </div>
             <div class="content">
                 <div class="icon"><mat-icon class="icon_status" mat-list-icon >check_circle</mat-icon></div>
                 <div>
                     <div>Situação do CPF</div>
-                    <div><strong>Regular</strong></div>
+                    <div><strong>{{getStatus()}}</strong></div>
                 </div>
             </div>
         </mat-card>
@@ -32,7 +32,7 @@
                 <div class="icon"><mat-icon mat-list-icon >credit_card</mat-icon></div>
                 <div>
                     <div>Número da conta</div>
-                    <div><strong>557932-4</strong></div>
+                    <div><strong>{{profile.application}}</strong></div>
                 </div>
             </div>
             <div class="content">
@@ -50,7 +50,7 @@
                 <div class="icon"><mat-icon mat-list-icon >credit_card</mat-icon></div>
                 <div>
                     <div>Número da conta</div>
-                    <div><strong>778461-8</strong></div>
+                    <div><strong>{{profile.credit}}</strong></div>
                 </div>
             </div>
             <div class="content">
