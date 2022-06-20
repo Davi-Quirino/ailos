@@ -5,7 +5,7 @@
     [formGroup]="filtersForm">
     <div class="cpf"><strong>CPF</strong></div>
     <div class="input-field">
-            <mat-form-field appearance="outline"  >
+            <mat-form-field appearance="outline" class="input_form"  >
             <input 
                 matInput 
                 type="text"
@@ -14,6 +14,11 @@
                 autocomplete="off"
                 isRequired/>
             </mat-form-field>
-            <button  class="button" mat-stroked-button color="primary" (click)="onSearch($event)">Consultar por CPF</button>
+            <button 
+                 class="button" 
+                 mat-stroked-button 
+                 color="primary" 
+                 (click)="onSearch()"
+                 [disabled]="disableButton">Consultar por CPF</button>
     </div>
 </form>

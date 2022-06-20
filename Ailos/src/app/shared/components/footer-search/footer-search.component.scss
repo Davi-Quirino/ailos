@@ -1,0 +1,21 @@
+
+
+:host{
+    display: flex;
+    align-items: center;
+    height: 15%;
+
+    .button{
+        background-color: #045e7b;
+        color: #ffffff;
+        margin-left: 2%;
+        height: 40px;
+    }
+    .button2{
+        background-color: #ffffff;
+        color:#045e7b;
+        border: 1px solid #045e7b;
+        margin-left: 2%;
+        height: 40px;
+    }
+}
