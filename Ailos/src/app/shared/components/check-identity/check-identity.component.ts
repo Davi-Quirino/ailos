@@ -17,8 +17,14 @@ export class CheckIdentityComponent implements OnInit {
   ngOnInit(): void {}
 
   isCPF(): boolean {
-    if (!this.filtersForm.value || this.filtersForm.value.cpf.length !== 11)
+    if (
+      !this.filtersForm.value ||
+      this.filtersForm.value.cpf.length !== 11 ||
+      !this.filtersForm.value.cpf.match(/^[0-9]+$/)
+    ) {
+      alert('Por favor, digite um cpf válido!');
       return false;
+    }
     return true;
   }
 

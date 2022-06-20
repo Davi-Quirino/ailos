@@ -3,16 +3,17 @@
     appFormFocus
     (keydown.enter)="$event.preventDefault()"
     [formGroup]="filtersForm">
-        <div class="input-field">
-            <div class="cpf"><strong>CPF</strong></div>
-                <mat-form-field appearance="outline" >
-                <input 
-                    matInput 
-                    type="text"
-                    formControlName="cpf"
-                    placeholder="000.000.000-00" 
-                    isRequired/>
-                </mat-form-field>
-        </div>
-        <button  class="button" mat-stroked-button color="primary" (click)="onSearch($event)">Consultar por CPF</button>
+    <div class="cpf"><strong>CPF</strong></div>
+    <div class="input-field">
+            <mat-form-field appearance="outline"  >
+            <input 
+                matInput 
+                type="text"
+                formControlName="cpf"
+                placeholder="000.000.000-00" 
+                autocomplete="off"
+                isRequired/>
+            </mat-form-field>
+            <button  class="button" mat-stroked-button color="primary" (click)="onSearch($event)">Consultar por CPF</button>
+    </div>
 </form>

@@ -1,0 +1,33 @@
+
+
+:host{
+    .container{
+        display: flex;
+    }
+
+    .card{
+        width: 20%;
+        margin-right: 2%;
+    }
+
+    .card_content{
+        height: 85%;
+    }
+
+    .subtitle{
+        font-size: 10px;
+        margin-bottom: 25px;
+    }
+
+    .content{
+        display: flex;
+        margin-bottom: 25px;
+    }
+
+    .icon{
+        margin-right: 5%;
+    }
+    .icon_status{
+        color: green;
+    }
+}
