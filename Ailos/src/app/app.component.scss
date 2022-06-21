@@ -2,29 +2,22 @@
 :host {
     width: 10%;
     height: 100%;
-
     .container{
         height: 100%;
         display: flex;
     }
-
     .container_components {
         display: flex;
         width: 100%;
-
     }
-
     .container_header{
         height: 10%;
     }
-
     .container_all {
         display: flex;
         width: 100%;
         flex-direction: column;
-        
     }
-
     .nav-list {
         height: 100%;
         background-color: #045e7b;

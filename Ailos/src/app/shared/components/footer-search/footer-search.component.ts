@@ -1,6 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Subject } from 'rxjs';
-//import { AppService } from 'src/app/app.service';
 
 @Component({
   selector: 'app-footer-search',

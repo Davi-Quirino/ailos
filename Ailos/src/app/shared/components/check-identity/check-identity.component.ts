@@ -5,8 +5,6 @@ import {
   FormGroup,
   Validators,
 } from '@angular/forms';
-import { Router } from '@angular/router';
-import { Subject } from 'rxjs';
 
 @Component({
   selector: 'app-check-identity',
@@ -14,9 +12,7 @@ import { Subject } from 'rxjs';
   styleUrls: ['./check-identity.component.scss'],
 })
 export class CheckIdentityComponent implements OnInit {
-  destroy$: Subject<boolean> = new Subject<boolean>();
-
-  @Output() onSearch: EventEmitter<boolean> = new EventEmitter<boolean>();
+  @Output() showCards: EventEmitter<boolean> = new EventEmitter<boolean>();
 
   cpfControl: FormControl = new FormControl('', [
     Validators.required,
@@ -30,18 +26,13 @@ export class CheckIdentityComponent implements OnInit {
 
   disableButton: boolean = false;
 
-  constructor(
-    private formBuilder: FormBuilder,
-    private router: Router
-  ) //private appService: AppService
-  {}
+  constructor(private formBuilder: FormBuilder) {}
 
   ngOnInit(): void {}
 
   search(): void {
     if (this.filtersForm.valid) {
-      this.onSearch?.emit(true);
-      //this.router.navigateByUrl('/user-infos');
+      this.showCards?.emit(true);
     } else {
       alert('Por favor, digite um cpf válido!');
     }

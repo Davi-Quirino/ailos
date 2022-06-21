@@ -6,7 +6,7 @@
         <app-information-consult></app-information-consult>
     </div>
     <div class="content">
-        <app-check-identity (onSearch)="displayResults($event)"></app-check-identity>
+        <app-check-identity (showCards)="displayResults($event)"></app-check-identity>
     </div>
     <div class="content" *ngIf="showCards">
         <app-card></app-card>
