@@ -9,7 +9,6 @@ import { ConsultComponent } from './consult/consult.component';
 import { HeaderComponent } from './Core/header/header.component';
 import { NavListComponent } from './Core/nav-list/nav-list.component';
 import { SharedModule } from './shared/shared.module';
-import { UserInfosComponent } from './user-infos/user-infos.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +16,6 @@ import { UserInfosComponent } from './user-infos/user-infos.component';
     HeaderComponent,
     ConsultComponent,
     NavListComponent,
-    UserInfosComponent,
   ],
   imports: [
     BrowserModule,

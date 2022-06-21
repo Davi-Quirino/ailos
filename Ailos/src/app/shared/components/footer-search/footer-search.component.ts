@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { Subject, takeUntil } from 'rxjs';
-import { AppService } from 'src/app/app.service';
+import { Component, Input, OnInit } from '@angular/core';
+import { Subject } from 'rxjs';
+//import { AppService } from 'src/app/app.service';
 
 @Component({
   selector: 'app-footer-search',
@@ -10,19 +10,9 @@ import { AppService } from 'src/app/app.service';
 export class FooterSearchComponent implements OnInit {
   destroy$: Subject<boolean> = new Subject<boolean>();
 
-  showButtons: boolean = false;
+  @Input() showButtons: boolean = false;
 
-  constructor(private appService: AppService) {}
+  constructor() {}
 
-  ngOnInit(): void {
-    this.checksExecutingAction();
-  }
-
-  checksExecutingAction(): void {
-    this.appService.userCpf
-      .pipe(takeUntil(this.destroy$))
-      .subscribe((userCpf: number) => {
-        this.showButtons = userCpf ? true : false;
-      });
-  }
+  ngOnInit(): void {}
 }
